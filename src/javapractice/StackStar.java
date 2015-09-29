@@ -5,6 +5,8 @@
  */
 package javapractice;
 
+import java.util.Stack;
+
 /**
  *
  * @author IswaryaParupudi
@@ -58,6 +60,12 @@ public class StackStar {
             long value = myStackStar.pop();
             System.out.println(value);
         }
+        
+        Stack stack = new Stack();
+        stack.add(1);
+        stack.capacity();
+        
+        
     }
 
 }
