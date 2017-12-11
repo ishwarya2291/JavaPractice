@@ -6,8 +6,6 @@
 
 package javapractice;
 
-import com.sun.org.apache.xalan.internal.xsltc.runtime.Hashtable;
-
 /**
  *
  * @author IswaryaParupudi

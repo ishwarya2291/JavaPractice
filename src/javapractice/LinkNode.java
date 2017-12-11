@@ -1,23 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package javapractice;
 
-/**
- *
- * @author IswaryaParupudi
- */
-public class LinkNode {
+public class LinkNode implements ILinkNode{
+
+    public int value;
+    public LinkNode next;
     
-    int value;
-    LinkNode next;
-    
-    public LinkNode(int value){
+    public LinkNode(int value) {
         this.value = value;
         this.next = null;
+    }
+    
+    @Override
+    public void print(LinkNode node) {
+        while (node != null) {
+            System.out.print(node.value + " ");
+            node = node.next;
+        }
     }
     
 }
